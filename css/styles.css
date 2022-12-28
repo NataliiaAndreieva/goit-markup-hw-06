@@ -536,23 +536,25 @@ img {
     position: relative;
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
     gap: 70px;
 }
 
-.sign {
-    position: absolute;
-    top: 0;
-    right: 0;
-}
 .footer-join-e-mail {
     width: 358px;
-   
+    height: 50px;
     padding: 15px 16px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
     background-color: var(--footer-background-color);
-}
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+
+    letter-spacing: 0.06em;
+    color: var(--white-color);
+    }
 
 .button-sign {
     width: 200px;
@@ -562,6 +564,7 @@ img {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: 1px solid transparent;
+    font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
     
@@ -569,6 +572,7 @@ img {
     letter-spacing: 0.06em;
     cursor: pointer;
 }
+
 .icon-send {
     vertical-align: middle;
     margin-left: 10px;
@@ -695,7 +699,8 @@ img {
     border: 1px solid rgba(0, 0, 0, 0.2);
     transition: fill 250ms var(--cubic);
 }
-.button-close:hover {
+.button-modal:hover,
+.button-modal:focus {
     fill: var(--accent-text-color);
 }
 
@@ -713,16 +718,26 @@ textarea {
 }
 .form {
     padding: 40px;
-    width: 528px;
+    width: 536px;
 }
 .form-field {
     position: relative;
     width: 100%;
     display: flex;
-    flex-direction: column;
+    flex-direction: column;  
     margin-bottom: 10px;
-    margin-top: 4px;
-    
+}
+.comment-field {
+    width: 100%;
+    display: flex;
+    flex-direction: column; 
+}
+
+.form-label {
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    margin-bottom: 4px;
 }
 .label-icon {
     position: absolute;
@@ -737,9 +752,16 @@ textarea {
 .form-input:focus + .label-icon {
     fill: var(--accent-text-color);
 }
+.label-icon:hover,
+.label-icon:focus {
+    fill: var(--accent-text-color);
+}
+
 .form-input {
-    padding-top: 12px;
-    padding-bottom: 12px;
+    margin-top: 4px;
+
+    padding-top: 11px;
+    padding-bottom: 11px;
     padding-left: 42px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -759,38 +781,43 @@ textarea {
     margin-bottom: 20px;
 
     transition: border 250ms var(--cubic), outline 250ms var(--cubic);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
 }
 
-.form-field textarea::placeholder {
+.form-label textarea::placeholder {
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
 }
+
 /* checkbox */
 .checkbox {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
 }
-.agree {
-    font-size: 14px;
-    line-height: 1.71;
-    color: var(--primary-text-color);
 
-}
 .agree-link {
     color: var(--accent-text-color);
-    text-decoration-line: unset;
-    border-bottom: 1px solid var(--accent-text-color);
+    text-decoration-skip-ink: none;
+    padding-left: 3px;
 }
 .checkbox-label {
     display: flex;
     align-items: center;
     justify-content: center;
     margin-bottom: 30px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    color: var(--primary-text-color);
 }
 .checkbox-icon {
+    display: inline-block;
     margin-right: 7px;
     width: 16px;
     height: 15px;  
