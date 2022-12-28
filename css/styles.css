@@ -559,6 +559,7 @@ img {
 .button-sign {
     width: 200px;
     height: 50px;
+    margin-left: 12px;
     background-color: var(--accent-text-color);
     color: var(--white-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -706,7 +707,7 @@ img {
 
 /* Фарма */
 .modal-title {
-    margin-bottom: 12px;
+    margin-bottom: 11px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
