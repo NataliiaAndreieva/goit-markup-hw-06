@@ -673,6 +673,8 @@ img {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 40px;
+
 
     min-width: 528px;
     min-height: 581px;
@@ -707,7 +709,7 @@ img {
 
 /* Фарма */
 .modal-title {
-    margin-bottom: 11px;
+    margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -717,21 +719,20 @@ img {
 textarea {
     resize: none;
 }
-.form {
-    padding: 40px;
-    width: 536px;
-}
+
 .form-field {
     position: relative;
     width: 100%;
     display: flex;
     flex-direction: column;  
     margin-bottom: 10px;
+    margin-top: 4px;
 }
 .comment-field {
     width: 100%;
     display: flex;
     flex-direction: column; 
+    margin-bottom: 20px;
 }
 
 .form-label {
@@ -759,8 +760,6 @@ textarea {
 }
 
 .form-input {
-    margin-top: 4px;
-
     padding-top: 11px;
     padding-bottom: 11px;
     padding-left: 42px;
@@ -779,7 +778,6 @@ textarea {
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     padding: 12px 16px;
-    margin-bottom: 20px;
 
     transition: border 250ms var(--cubic), outline 250ms var(--cubic);
     font-weight: 400;
